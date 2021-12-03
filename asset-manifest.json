@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/Terminal-Web/static/css/main.1b215bd0.chunk.css",
-    "main.js": "/Terminal-Web/static/js/main.32b15399.chunk.js",
-    "main.js.map": "/Terminal-Web/static/js/main.32b15399.chunk.js.map",
+    "main.css": "/Terminal-Web/static/css/main.c8212b31.chunk.css",
+    "main.js": "/Terminal-Web/static/js/main.c79150af.chunk.js",
+    "main.js.map": "/Terminal-Web/static/js/main.c79150af.chunk.js.map",
     "runtime-main.js": "/Terminal-Web/static/js/runtime-main.c65f1fd6.js",
     "runtime-main.js.map": "/Terminal-Web/static/js/runtime-main.c65f1fd6.js.map",
-    "static/js/2.41d5e118.chunk.js": "/Terminal-Web/static/js/2.41d5e118.chunk.js",
-    "static/js/2.41d5e118.chunk.js.map": "/Terminal-Web/static/js/2.41d5e118.chunk.js.map",
+    "static/js/2.61dc96ab.chunk.js": "/Terminal-Web/static/js/2.61dc96ab.chunk.js",
+    "static/js/2.61dc96ab.chunk.js.map": "/Terminal-Web/static/js/2.61dc96ab.chunk.js.map",
     "index.html": "/Terminal-Web/index.html",
-    "static/css/main.1b215bd0.chunk.css.map": "/Terminal-Web/static/css/main.1b215bd0.chunk.css.map",
-    "static/js/2.41d5e118.chunk.js.LICENSE.txt": "/Terminal-Web/static/js/2.41d5e118.chunk.js.LICENSE.txt",
-    "static/media/logo.b2e5a01e.svg": "/Terminal-Web/static/media/logo.b2e5a01e.svg"
+    "static/css/main.c8212b31.chunk.css.map": "/Terminal-Web/static/css/main.c8212b31.chunk.css.map",
+    "static/js/2.61dc96ab.chunk.js.LICENSE.txt": "/Terminal-Web/static/js/2.61dc96ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c65f1fd6.js",
-    "static/js/2.41d5e118.chunk.js",
-    "static/css/main.1b215bd0.chunk.css",
-    "static/js/main.32b15399.chunk.js"
+    "static/js/2.61dc96ab.chunk.js",
+    "static/css/main.c8212b31.chunk.css",
+    "static/js/main.c79150af.chunk.js"
   ]
 }

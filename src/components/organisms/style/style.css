@@ -1,0 +1,83 @@
+.zshContainer {
+  position: relative;    /*por la imagen de fondo*/
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.boxPath {
+  width: 160px;
+  height: 1.2rem;
+  margin-left: 15px;
+  box-shadow: -5px 0 0 0 #a1a49e,
+             -10px 0 0 0 #70716c,
+             -15px 0 0 0 #3e3d3b,
+             5px 0 0 0 #2a2929,
+             10px 0 0 0 #201f1e,
+             15px 0 0 0 #151413;
+  position: relative;
+}
+.boxPath article {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.boxPath svg {
+  width: 11px;
+}
+
+.boxLogoLinux {
+  z-index: 20;
+  width: calc(1rem + 21px);
+  background-color: white;
+  clip-path: polygon(0 0, calc(100% - 10px) 0,
+             100% 50%, calc(100% - 10px) 100%, 0 100%);
+}
+.boxLogoLinux .iconLinux {
+  margin-right: calc(.5rem + 10px);
+}
+
+.boxHome {
+  z-index: 15;
+  background-color: #3465a4;
+  color: white;
+  width: calc(100% - (1rem + 11px));
+  clip-path: polygon(0 0, calc(100% - 10px) 0,
+             100% 50%, calc(100% - 10px) 100%, 0 100%);
+}
+
+.boxHome .rutaDate {
+  margin: 0 calc(.5rem + 11px) 0 .5rem;
+  font-size: 14px;
+}
+
+.boxLogoWolf {
+  z-index: 10;
+  background-color: #333;
+  width: 100%;
+}
+
+.boxLogoWolf .iconWolf {
+  color: #FF0;
+  margin-right: .5rem;
+}
+
+.textoParaCompletar {
+  font-weight: bold;
+  color: #00FF00;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px ;
+  padding-right: 1px;
+  border-right: 2px solid white;
+  animation: parpadeo 1s linear infinite;
+}
+@keyframes parpadeo {
+  0% { border-right: 2px solid white; }
+  50% { border-right: 2px solid white; }
+  51% { border-right: 2px solid transparent; }
+  100% { border-right: 2px solid transparent; }
+}

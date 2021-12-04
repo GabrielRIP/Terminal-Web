@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import exampleState from './reducerForExample'
+import navOptionState from './NavOptionReducer'
 
 const rootReducers = combineReducers({
-  exampleState
+  navOptionState
 })
 
 export default rootReducers

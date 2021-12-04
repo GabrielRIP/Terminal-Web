@@ -1,5 +1,5 @@
 {
-  "homepage": "https://www.gabrielcode.dev/",
+  "homepage": "https://gabrielcode.dev",
   "name": "web-terminal-new",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
     "thunk": "^0.0.1"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "yarn build && echo gabrielcode.dev > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

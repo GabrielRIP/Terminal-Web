@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 //Import Components
 import LsdContent from '../organisms/LsdContent'
 import ZshContent from '../organisms/ZshContent'
-import FloatOption from '../organisms/FloatOption'
+import FloatOption from '../organisms/floatOption/FloatOption'
 
 //Styled Components and CSS
 import { MainContainer, MainSubContainer } from './style/mainTerminal.js'

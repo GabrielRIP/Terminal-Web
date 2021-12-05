@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { change_state } from '../../redux/actions/NavOptionAction'
+import { elegir_titulo } from '../../redux/actions/PreferenceAction'
 
 //Styled Components and CSS
 import { NavContainer, PLeft } from './style/navTerminal.js'
@@ -24,6 +25,7 @@ export default function NavTerminal() {
       setIsOpen(true)
       setTextLeft('Help')
       setTitleCenter('Web-Terminal')
+      dispatch(elegir_titulo('Colors'))
     }
   }
 

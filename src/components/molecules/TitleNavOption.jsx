@@ -1,52 +1,56 @@
-import { useSelector } from "react-redux"
-import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux"
 import styled from "styled-components"
 
-export default function TitleNavOption({ texto }) {
-  const preferenceState = useSelector(state => state.preferenceState)
+import { elegir_titulo } from '../../redux/actions/PreferenceAction'
 
-  useEffect(() => {
-    const firtsTitle = document.querySelector('.Colors .spamer')
-    firtsTitle.style.background = '#0074d9'
-  });
+export default function TitleNavOption({ texto, styleSpan }) {
+  const preferenceState = useSelector(state => state.preferenceState)
+  const dispatch = useDispatch()
 
   function selectTitle(e) {
     const title1 = document.querySelector(`.${preferenceState.titleOne}`)
     const title2 = document.querySelector(`.${preferenceState.titleTwo}`)
     const title3 = document.querySelector(`.${preferenceState.titleThree}`)
+    let text;  // devuelve el nombre del titulo
 
     if(e.target.classList[2] === preferenceState.titleOne) {
-      title2.lastChild.style.background = 'transparent'
-      title3.lastChild.style.background = 'transparent'
-      title1.lastChild.style.background = '#0074d9'
-    } else if(e.target.classList[2] === preferenceState.titleTwo) {
-      title1.lastChild.style.background = 'transparent'
-      title3.lastChild.style.background = 'transparent'
-      title2.lastChild.style.background = '#0074d9'
-    } else if(e.target.classList[2] === preferenceState.titleThree) {
-      title1.lastChild.style.background = 'transparent'
-      title2.lastChild.style.background = 'transparent'
-      title3.lastChild.style.background = '#0074d9'
+      title2.style.background = 'transparent'
+      title3.style.background = 'transparent'
+      title1.style.background = '#0074d9'
+      text = e.target.innerText
     }
+
+    if(e.target.classList[2] === preferenceState.titleTwo) {
+      title1.style.background = 'transparent'
+      title3.style.background = 'transparent'
+      title2.style.background = '#0074d9'
+      text = e.target.innerText
+    }
+
+    if(e.target.classList[2] === preferenceState.titleThree) {
+      title1.style.background = 'transparent'
+      title2.style.background = 'transparent'
+      title3.style.background = '#0074d9'
+      text = e.target.innerText
+    }
+    dispatch(elegir_titulo(text))
   }
 
   return (
-    <Parrafo className={texto} onClick={selectTitle}>
+    <Parrafo className={texto} onClick={selectTitle} style={styleSpan}>
       {texto}
-      <Spamaso className="spamer"></Spamaso>
     </Parrafo>
   )
 }
 
 const Parrafo = styled.p`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   font-weight: 600;
   height: 1.8rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-`
-const Spamaso = styled.span`
-  width: 100%;
-  height: 3px;
+  padding: 0 1rem;
+  margin: 5px 0;
+  border-radius: 1rem;
 `

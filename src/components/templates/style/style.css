@@ -1,3 +1,4 @@
+/* El box de Options Hamburger */
 .hamburgerClose {
   width: 1.5rem;
   height: 1.5rem;
@@ -43,4 +44,21 @@
 }
 .hamburgerOpen span:nth-child(3) {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* El Box Flotante para contenido de Preference y Help*/
+.floatDisabled {
+  position: absolute;
+  z-index: 20;
+  background-color: #484848;
+  width: 100vw;
+  height: 0px;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 1rem 1rem;
+  color: #fff;
+  transition: height .5s ease-in-out;
+}
+.floatEnabled {
+  height: 100%;
 }

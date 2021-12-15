@@ -7,19 +7,19 @@ const defaultState = {
 }
 
 const navOptionState = (state = defaultState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case CHANGE_STATE:
       return {
         ...state,
         stateBoolean: action.payload,
-        classHamburger: action.payload ? 
-          'hamburgerClose hamburgerOpen' : 
-          'hamburgerClose',
-        classBoxFloat: action.payload ? 
-          'floatDisabled floatEnabled' : 
-          'floatDisabled'
+        classHamburger: action.payload
+          ? 'hamburgerClose hamburgerOpen'
+          : 'hamburgerClose',
+        classBoxFloat: action.payload
+          ? 'floatDisabled floatEnabled'
+          : 'floatDisabled'
       }
     default: return state
   }
 }
-export default navOptionState 
+export default navOptionState

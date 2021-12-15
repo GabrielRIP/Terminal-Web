@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux'
 import navOptionState from './NavOptionReducer'
 import preferenceState from './PreferenceReducer'
 

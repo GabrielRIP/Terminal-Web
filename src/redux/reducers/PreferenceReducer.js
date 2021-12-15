@@ -9,7 +9,7 @@ const defaultState = {
 }
 
 const preferenceState = (state = defaultState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case ELIGE_TITULO:
       return {
         ...state,
@@ -18,4 +18,4 @@ const preferenceState = (state = defaultState, action) => {
     default: return state
   }
 }
-export default preferenceState 
+export default preferenceState

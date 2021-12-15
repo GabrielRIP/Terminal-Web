@@ -1,16 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-//Import Components
+// Import Components
 import Mainterminal from './components/templates/MainTerminal'
 import NavTerminal from './components/templates/NavTerminal'
 
-
-export default function App() {
+export default function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <NavTerminal />
       <Mainterminal />
     </div>
-  );
+  )
 }

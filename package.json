@@ -26,7 +26,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json"
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -41,9 +41,12 @@
     ]
   },
   "devDependencies": {
-    "eslint": "7.11.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-promise": "^5.0.0",
+    "eslint-plugin-react": "^7.27.1",
     "gh-pages": "^3.2.3"
   }
 }

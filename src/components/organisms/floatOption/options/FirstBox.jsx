@@ -1,10 +1,11 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-export default function PrimerBox() {
+export default function PrimerBox () {
   return (
+    /* eslint jsx-quotes: ['error', 'prefer-double'] */
     <>
       <Box1>
-        <InputDefault type="checkbox" name="defaultSystem" id="defaultSystem"/>
+        <InputDefault type="checkbox" name="defaultSystem" id="defaultSystem" />
         <LabelDefault htmlFor="defaultSystem">Usar colores del tema del sistema</LabelDefault>
       </Box1>
     </>

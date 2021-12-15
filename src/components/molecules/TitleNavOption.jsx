@@ -1,39 +1,39 @@
-import { useDispatch, useSelector } from "react-redux"
-import styled from "styled-components"
+import { useDispatch, useSelector } from 'react-redux'
+import styled from 'styled-components'
 
-import { elegir_titulo } from '../../redux/actions/PreferenceAction'
+import { elegirTitulo } from '../../redux/actions/PreferenceAction'
 
-export default function TitleNavOption({ texto, styleSpan }) {
+export default function TitleNavOption ({ texto, styleSpan }) {
   const preferenceState = useSelector(state => state.preferenceState)
   const dispatch = useDispatch()
 
-  function selectTitle(e) {
+  function selectTitle (e) {
     const title1 = document.querySelector(`.${preferenceState.titleOne}`)
     const title2 = document.querySelector(`.${preferenceState.titleTwo}`)
     const title3 = document.querySelector(`.${preferenceState.titleThree}`)
-    let text;  // devuelve el nombre del titulo
+    let text // devuelve el nombre del titulo
 
-    if(e.target.classList[2] === preferenceState.titleOne) {
+    if (e.target.classList[2] === preferenceState.titleOne) {
       title2.style.background = 'transparent'
       title3.style.background = 'transparent'
       title1.style.background = '#0074d9'
       text = e.target.innerText
     }
 
-    if(e.target.classList[2] === preferenceState.titleTwo) {
+    if (e.target.classList[2] === preferenceState.titleTwo) {
       title1.style.background = 'transparent'
       title3.style.background = 'transparent'
       title2.style.background = '#0074d9'
       text = e.target.innerText
     }
 
-    if(e.target.classList[2] === preferenceState.titleThree) {
+    if (e.target.classList[2] === preferenceState.titleThree) {
       title1.style.background = 'transparent'
       title2.style.background = 'transparent'
       title3.style.background = '#0074d9'
       text = e.target.innerText
     }
-    dispatch(elegir_titulo(text))
+    dispatch(elegirTitulo(text))
   }
 
   return (

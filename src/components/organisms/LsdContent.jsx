@@ -1,13 +1,13 @@
-import styled from "styled-components"
-import LsdList from '../molecules/LsdList'  
+import styled from 'styled-components'
+import LsdList from '../molecules/LsdList'
 
 import { LsdData } from './LsdData.js'
 
-export default function LsdContent() {
+export default function LsdContent () {
   return (
     <LsdContainer>
       {LsdData.map(ele => (
-        <LsdList 
+        <LsdList
           key={ele.id}
           classPersonalizado={ele.newClass}
           typeD={ele.iconSvg}

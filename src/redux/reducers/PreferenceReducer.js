@@ -1,4 +1,5 @@
 import { ELIGE_TITULO } from '../actions/PreferenceAction'
+
 const defaultState = {
   titleOne: 'Colors',
   titleTwo: 'Fonts',

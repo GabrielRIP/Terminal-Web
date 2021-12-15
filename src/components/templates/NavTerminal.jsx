@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { change_state } from '../../redux/actions/NavOptionAction'
-import { elegir_titulo } from '../../redux/actions/PreferenceAction'
+import { changeState } from '../../redux/actions/NavOptionAction'
+import { elegirTitulo } from '../../redux/actions/PreferenceAction'
 
 // Styled Components and CSS
 import { NavContainer, PLeft } from './style/navTerminal.js'
@@ -16,16 +16,16 @@ export default function NavTerminal () {
 
   function changeLocalState () {
     if (isOpen) {
-      dispatch(change_state(isOpen))
+      dispatch(changeState(isOpen))
       setIsOpen(false)
       setTextLeft('')
       setTitleCenter('Preference')
     } else {
-      dispatch(change_state(isOpen))
+      dispatch(changeState(isOpen))
       setIsOpen(true)
       setTextLeft('Help')
       setTitleCenter('Web-Terminal')
-      dispatch(elegir_titulo('Colors'))
+      dispatch(elegirTitulo('Colors'))
     }
   }
 

@@ -1,7 +1,8 @@
 import './style/style.css'
 
-export default function ZshContent() {
+export default function ZshContent () {
   return (
+    /* eslint jsx-quotes: ['error', 'prefer-double'] */
     <section className="zshContainer">
       <div className="boxPath">
         <article className="boxLogoLinux">
